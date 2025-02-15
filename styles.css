@@ -30,12 +30,12 @@
     background-image: linear-gradient(to bottom left,  #FFDAB9   , #FFF5EE   );
     min-height: 100vh;
     background-size: cover;
-    padding: 50px 40px;
+    padding: 40px 30px;
 }
 .card-container {
     font-family: "Roboto";
     background-color: white;
-    padding: 28px;
+    padding: 20px;
     border-radius: 16px;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth pop-up effect */
 }
