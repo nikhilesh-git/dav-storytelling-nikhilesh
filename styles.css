@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-heading {
+    color: rgb(244, 246, 255);
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 80px;
+    padding-right: 30%;
+    padding-bottom: 70px;
+    background-image:url('https://i.ibb.co/G4KKMKHW/image.png');
+    background-size: cover;
+
+}
+.intro-heading{
+    font-family: "Roboto";
+    font-size: 36px;
+    
+    font-weight: bold;
+    color: #11154b;
+}
+.intro-para{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #11154b;
+}
+
+.bg-container {
+    background-image: linear-gradient(to bottom left,  #FFDAB9   , #FFF5EE   );
+    min-height: 100vh;
+    background-size: cover;
+    padding: 50px 40px;
+}
+.card-container {
+    font-family: "Roboto";
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth pop-up effect */
+}
+
+/* Pop-up Effect on Hover */
+.card-container:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transform: scale(1.05); /* Slightly enlarges the card */
+}
+
+.hr-line{
+    background-color: black;
+}
+.card-heading{
+    color: #000435;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 28px;
+}
+.card-para{
+    font-size: 14px;
+}
+/* General Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card i, .card img {
+    margin-bottom: 10px;
+}
+
+.card h5 {
+    font-weight: bold;
+    color: #222;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Icon Colors */
+.text-primary {
+    color: #007bff !important;
+}
+.text-success {
+    color: #28a745 !important;
+}
+.text-danger {
+    color: #dc3545 !important;
+}
+.text-warning {
+    color: #ffc107 !important;
+}
+.text-info {
+    color: #17a2b8 !important;
+}
+.text-secondary {
+    color: #6c757d !important;
+}
+.text-pink {
+    color: #e83e8c !important;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+.bottom-container{
+    background-color: #2c345c;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 20px ;
+}

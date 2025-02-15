@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Watch Preferences at IIT Bhilai</title>
+</head>
+
+<body>
+    
+    <h1 class="main-heading text-left  pl-5">Timeless Trends: Exploring Watch Preferences Among Students of IIT Bhilai</h1>
+    <div class="bg-container text-center">
+        <div class="pt-4 pb-4">
+            <h1 class="intro-heading">1. The Curiosity: What Do Watches Reveal About Us?</h1>
+            <p class="intro-para pt-4">  
+                As someone fascinated by data, I often find myself uncovering insights from everyday choices. This time, my focus turned to something we wear on our wrists watches. More than just devices for telling time, watches reflect personality, lifestyle, and even the latest trends.  
+                At IIT Bhilai, students have diverse preferences. Some favor smartwatches for their convenience and advanced features, while others appreciate the elegance of analog watches. But what drives these choices? Are they influenced by functionality, brand appeal, or personal style?  
+                To explore this, I conducted a survey among IIT Bhilai students, gathering data on watch types, favorite brands, and the motivations behind their selections. The analysis uncovered intriguing patterns—offering a glimpse into how students balance fashion, technology, and practicality in their watch preferences.
+            <p/>
+        </div>
+        <div class="hr-line">
+            <hr/>
+        </div>
+        <div class="pt-4 pb-4">
+            <h1 class="intro-heading">2. Data Cleaning and Preprocessing</h1>
+            <p class="intro-para pt-4 text-left">  
+                Before analyzing students' watch preferences, I've cleaned the dataset to ensure accuracy and consistency.Here is the overview of that data cleaning and preprocessing I've done:
+            <p/>
+            <ul class="intro-para text-left">
+                <li class="">I've removed any extra spaces from column names and values to ensure consistency and prevent mismatches during analysis.</li>
+                <li class="">Filled in missing entries in the "Features valued" column with "Unknown" so that no data points were lost due to empty values.</li>
+                <li class="">I've also standardized text variations by converting all instances of "Nil" to "None" in the "Brand" and "Features valued" columns, making the dataset more uniform.</li>
+                <li class="">I applied a lambda function to strip any trailing spaces from feature names, ensuring the data remained clean and well-structured.</li>
+            </ul>
+        </div>
+        <div class="hr-line">
+            <hr/>
+        </div>
+        <div class="pt-4 pb-4">
+            <h1 class="intro-heading">3. Exploring Watch Trends</h1>
+            <p class="intro-para pt-4">  
+                Watches are more than just accessories—they reflect personality, lifestyle, and daily habits. At IIT Bhilai, students choose their watches based on various factors, from functionality to fashion. But what patterns emerge when we analyze these choices?  
+                By diving into the data, we can uncover trends in watch types, brand popularity, and the reasons behind these preferences. Are students leaning toward smartwatches for convenience, or do classic analog designs still hold their charm? Does budget play a major role, or is brand loyalty a stronger factor?  
+                Through this analysis, we begin to see how personal style, technology, and practicality intersect in the world of watches.
+            <p/>
+        </div>
+        <div class="container card-container shadow mt-5">
+            <div class="row d-flex align-items-md-center">
+                <div class="col-12 col-md-6 d-flex  align-items-center">
+                    <div class="card-content p-4 ">
+                        <h1 class="card-heading pb-3">1. What Type of Watches Do Students Prefer?</h1>
+                        <p class="para text-left">
+                            I have analyzed the types of watches that students prefer the most by plotting a stacked bar plot.
+                        </p>
+                        <ul class="card-para text-left">
+                            <li class="">Analog watches dominate the scene, especially among males, showing a clear preference for classic styles.</li>
+                            <li class="">Smartwatches hold a notable share, particularly among females, suggesting a growing interest in wearable technology.</li>
+                            <li class="">Digital and hybrid watches have the smallest audience, highlighting their niche appeal.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="card-image w-100" src="https://i.ibb.co/spRwwChD/watch-type-distribution.png" />
+                </div>
+            </div>
+        </div>
+        <div class="container card-container shadow mt-5">
+            <div class="row d-flex align-items-md-center">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <img class="card-image w-100" src="https://i.ibb.co/r216Znjq/brand-distribution-line-plot.png" />
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2 ">
+                    <div class="card-content ">
+                        <h1 class="card-heading">2.What is the most Liked Brand?</h1>
+                        <p class="card-para text-left">Next, I've made a line plot showing how males and females choose their preferred watch brands.</p>
+                        <ul class="card-para text-left">
+                            <li class="">Fastrack leads the pack, particularly among males, indicating its strong reputation for trendy and affordable designs.</li>
+                            <li class="">For females, Noise stands out, likely due to its focus on budget-friendly smartwatches.</li>
+                            <li class="">We can see that luxury brands like Rolex have a minimal presence, reflecting that affordability is a crucial factor for students.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container card-container shadow mt-5">
+            <div class="row d-flex align-items-md-center">
+                <div class="col-12 col-md-6">
+                    <div class="card-content">
+                        <h1 class="card-heading">3. What is the Purpose of Wearing a Watch?</h1>
+                        <p class="para">Inorder to know the purpose behind wearing a watch I've created a bar chart to showcase how males and females use watches for different purposes.</p>
+                        <ul class="card-para text-left">
+                            <li class="">Daily wear dominates, showing practicality as the top priority for both genders.</li>
+                            <li class="">I found that daily wear is comparitively more for females than males but the remaining are dominated by males.</li>
+                            <li class="">Fitness tracking and Special Occassions are the least valued.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="card-image w-100" src="https://i.ibb.co/MDN8sNBt/image.png" />
+                </div>
+            </div>
+        </div>
+        <div class="container card-container shadow mt-5">
+            <div class="row d-flex align-items-md-center">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <img class="card-image w-100" src="https://i.ibb.co/FbVCJ8fm/image.png" />
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2 ">
+                    <div class="card-content ">
+                        <h1 class="card-heading">4. What Features Matter the Most to Students?</h1>
+                        <p class="card-para text-left">When it comes to choosing a watch, I've analyzed what do students prioritize.</p>
+                        <ul class="card-para text-left">
+                            <li class="">Design and Appearance stands out among students, highlighting the importance of aesthetics.</li>
+                            <li class="">This is followed by price affordability, implying that students prefer budget-friendly watches.</li>
+                            <li class="">Smart features like fitness tracking are the least valued, showing a preference for traditional watch functions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-line mt-5">
+            <hr/>
+        </div>
+        <div class="pt-4 pb-4">
+            <h1 class="intro-heading">4. Mathematical Model</h1>
+            <p class="intro-para pt-4">  
+                With the data, I've attempted to analyze and predict watch preferences using mathematical models, particularly Linear Regression analysis. By examining relationships between factors like age, watch type, and popularity, I used regression to identify trends and make predictions. This model helps uncover how different variables influence watch choices, providing insights beyond raw numbers. Here’s how I did it: ⬇️:
+            <p/>
+        </div>
+        <div class="container card-container shadow mt-5">
+            <div class="row d-flex align-items-md-center">
+                <div class="col-12 col-md-6">
+                    <div class="card-content">
+                        <h1 class="card-heading">Regression Model to Predict Watch Type based on Age</h1>
+                        <p class="para">As I analyzed the data, one trend stood out, older students tend to prefer Analog watches, while younger ones lean toward both.The regression line showed a gradual shift, suggesting that as students grow older, they may value classic styles more. Smartwatches, however, remained popular across all ages, hinting at their broad appeal. Hybrid watches were rare, making me wonder if they’re just not widely adopted. This analysis revealed a simple but interesting pattern: age influences watch preference, but personal choice always plays a role.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="card-image w-100" src="https://i.ibb.co/gZcNQs4k/image.png" />
+                </div>
+            </div>
+        </div>
+        <div class="hr-line mt-5">
+            <hr/>
+        </div>
+        <!-- Key Findings Section -->
+        <div class="container mt-5">
+            <h1 class="text-center intro-heading mb-4">4. Key Findings and My Observations</h1>
+            <div class="row">
+        
+                <!-- Insight 1: Analog Watches are Popular -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm p-3">
+                        <i class="fas fa-clock fa-3x text-primary"></i>
+                        <h5 class="mt-3">Classic Appeal of Analog Watches</h5>
+                        <p class="text-muted">Analog watches dominate, especially among males, reflecting their timeless charm.</p>
+                    </div>
+                </div>
+        
+                <!-- Insight 3: Fastrack is the Top Brand -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm p-3">
+                        <img class="m-auto" src="https://i.ibb.co/MqqBx9H/brand-fastrack-256x209.png" width="80" alt="Fastrack Logo">
+                        <h5 class="mt-3">Fastrack Leads Among Brands</h5>
+                        <p class="text-muted">Fastrack is the top choice, particularly for males, due to affordability and style.</p>
+                    </div>
+                </div>
+        
+                <!-- Insight 4: Price Affordability Matters -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm p-3">
+                        <i class="fas fa-tags fa-3x text-danger"></i>
+                        <h5 class="mt-3">Budget-Friendly Choices</h5>
+                        <p class="text-muted">Students prioritize affordability, showing a strong preference for budget-friendly options.</p>
+                    </div>
+                </div>
+        
+                <!-- Insight 5: Most Wear Watches Daily -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm p-3">
+                        <i class="fas fa-calendar-day fa-3x text-warning"></i>
+                        <h5 class="mt-3">Daily Wear is the Main Purpose</h5>
+                        <p class="text-muted">Most students wear watches daily for practical use rather than fashion.</p>
+                    </div>
+                </div>
+        
+                <!-- Insight 6: Design & Aesthetics Matter -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm p-3">
+                        <i class="fas fa-palette fa-3x text-info"></i>
+                        <h5 class="mt-3">Design Over Smart Features</h5>
+                        <p class="text-muted">Students prioritize design and aesthetics over advanced smart features.</p>
+                    </div>
+                </div>
+        
+                <!-- Insight 7: Limited Interest in Luxury Brands -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm p-3">
+                        <i class="fas fa-gem fa-3x text-secondary"></i>
+                        <h5 class="mt-3">Luxury Brands Have Limited Appeal</h5>
+                        <p class="text-muted">High-end brands like Rolex see minimal interest among students due to cost constraints.</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <p class="intro-para">Through this data-driven exploration of watch preferences at IIT Bhilai, I've uncovered some fascinating insights into the horological habits of students and also gained practical experience of data analysis and visualization.<p/>
+    </div>
+    <div class="bottom-container text-center">
+            <p>Story and Analysis by G.Nikhilesh<p/>
+        </div>
+</body>
+
+</html>
